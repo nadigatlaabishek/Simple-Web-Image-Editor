@@ -3,7 +3,7 @@ console.log(allimg);
 for(i=0;i<=allimg.length-1;i++)
 {
     allimg[i].src=`./images/${i}.jpg`
-    console.log(i)
+    console.log(i);
 }
 
 var imageFilePath;
@@ -46,8 +46,8 @@ function effects()
     var skewYVal=document.getElementById("skewYVal").value;
 
     document.getElementById("imageTag").style.transform=`rotateZ(${rotZVal}deg)
-    rotateX(${rotXVal}deg) rotateY(${rotYVal}deg) scale(${scaleVal}) scale(${scaleXVal})
-    scale(${scaleYVal}) skew(${skewVal}deg) skew(${skewXVal}deg) skew(${skewYVal}deg)`
+    rotateX(${rotXVal}deg) rotateY(${rotYVal}deg) scale(${scaleVal}) scaleX(${scaleXVal})
+    scaleY(${scaleYVal}) skew(${skewVal}deg) skewX(${skewXVal}deg) skewY(${skewYVal}deg)`
 
     document.getElementById("imageTag").style.filter=`blur(${blurValue}px) 
     brightness(${brightnessVal}%) contrast(${constVal}%) grayscale(${grayVal}%)
