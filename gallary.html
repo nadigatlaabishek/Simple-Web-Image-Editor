@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gallary.css">
+    <script src="./gallary.js" defer></script>
+</head>
+<body>
+    <h1>My Gallary</h1>
+    <div id="container">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+    </div>
+    <div id="biggerImageContainer">
+        <span id="close" onclick="closeImageContainer()">X</span>
+        <div id="image"> 
+        </div>
+        <input type="button" value="Edit" id="editButton" onclick="editWindowEnable()">
+    </div>
+    <div id="editContainer">
+        <span id="Editclose" onclick="editWindowClose()">X</span>
+        <div id="editImage">
+            <div id="imageTag"></div>
+        </div>
+        <div id="filterProperty">
+            <h1 class="editHeading">Filter Adjustments</h1>
+            <h6>Blur</h6>
+            <input type="range" id="blurVal" value="0" max="10" oninput="effects()">
+            <h6>Brightness</h6>
+            <input type="range" id="brightnessVal" oninput="effects()" value="100" min="0" max="200">
+            <h6>Contrast</h6>
+            <input type="range" id="constVal" oninput="effects()" min="0" max="200" value="100">
+            <h6>GrayScale</h6>
+            <input type="range" oninput="effects()" id="grayVal" max="100" min="0" value="0">
+            <h6>Hue-rotate</h6>
+            <input type="range" oninput="effects()" id="hueVal" min="0" max="360" value="0">
+            <h6>Invert</h6>
+            <input type="range" oninput="effects()" id="invVal" min="0" value="0" max="100">
+            <h6>opacity</h6>
+            <input type="range" oninput="effects()"  id="opaVal" value="100">
+            <h6>saturate</h6>
+            <input type="range" oninput="effects()" id="satVal"  min="0" max="100" value="100">
+            <h6>sepia</h6>
+            <input type="range" oninput="effects()" id="sepVal" min="0" max="100" value="0">
+        </div>
+        <div id="transformProperty">
+            <h1 class="editHeading">Transform Adjustments</h1>
+            <h6>Rotate Z</h6>
+            <input type="range" oninput="effects()" id="rotZVal" min="0" max="180" value="0">
+            <h6>Rotate X</h6>
+            <input type="range" oninput="effects()" id="rotXVal" min="0" max="180" value="0">
+            <h6>Rotate Y</h6>
+            <input type="range" oninput="effects()" id="rotYVal" min="0" max="180" value="0">
+            <h6>Scale</h6>
+            <input type="range" oninput="effects()" id="scaleVal" min="0"  max="3" value="1">
+            <h6>Scale X</h6>
+            <input type="range" oninput="effects()" id="scaleXVal" min="0" max="3" value="1">
+            <h6>Scale Y</h6>
+            <input type="range" oninput="effects()" id="scaleYVal" min="0" max="3" value="1">
+            <h6>Skew</h6>
+            <input type="range" oninput="effects()" id="skewVal" min="0" max="180" value="0">
+            <h6>Skew X</h6>
+            <input type="range" oninput="effects()" id="skewXVal" min="0" max="180" value="0">
+            <h6>Skew Y</h6>
+            <input type="range" oninput="effects()"  id="skewYVal" min="0" max="180"  value="0">
+        </div>
+    </div>
+</body>
+</html>
